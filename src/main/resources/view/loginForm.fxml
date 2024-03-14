@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ormCoursework.controller.LoginFormController">
+   <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
+      <left>
+         <AnchorPane prefHeight="500.0" prefWidth="350.0" styleClass="sideAnchorPane" stylesheets="@../style/loginFormStyle.css" BorderPane.alignment="CENTER">
+            <Label layoutX="66.0" layoutY="224.0" text="Welcome back!" textFill="#eaeef4">
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="260.0" text="Please enter your credentials to log in" textFill="#eaeef4" />
+         </AnchorPane>
+      </left>
+      <right>
+         <AnchorPane prefHeight="500.0" prefWidth="350.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" BorderPane.alignment="CENTER">
+            <FontAwesomeIconView fill="#164863" glyphName="USERS" layoutX="156.0" layoutY="118.0" size="35" />
+            <Text layoutX="119.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #427D9D;" text="User login">
+               <font>
+                  <Font name="Ubuntu" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUserName" layoutX="118.0" layoutY="201.0" promptText="User Name" />
+            <PasswordField fx:id="txtPassword" layoutX="120.0" layoutY="258.0" promptText="Password" />
+            <FontAwesomeIconView fill="#427d9d" glyphName="USER" layoutX="83.0" layoutY="222.0" size="25" wrappingWidth="19.285714149475098" />
+            <FontAwesomeIconView fill="#427d9d" glyphName="KEY" layoutX="82.0" layoutY="279.0" size="25" />
+            <JFXButton layoutX="121.0" layoutY="355.0" onAction="#btnLoginOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Login" />
+            <JFXButton layoutX="121.0" layoutY="400.0" onAction="#btnExitOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnRed" text="Exit" textFill="RED" />
+            <JFXCheckBox layoutX="121.0" layoutY="290.0" onAction="#chkOnAction" opacity="0.69" text="Show password" />
+         </AnchorPane>
+      </right>
+   </BorderPane>
+</AnchorPane>

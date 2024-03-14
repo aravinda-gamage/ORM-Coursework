@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1015.0" prefWidth="1235.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ormCoursework.controller.DashboardFormController">
+   <children>
+      <HBox layoutY="47.0" prefHeight="144.0" prefWidth="1235.0" spacing="25.0">
+         <children>
+            <AnchorPane prefHeight="144.0" prefWidth="276.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="36.0" prefHeight="73.0" prefWidth="73.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/icon/user-tick.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="txtEmployee" fill="#1351cb" layoutX="111.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+                     <font>
+                        <Font name="SansSerif Bold" size="51.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#a3a3a3" layoutX="109.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Employees">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="144.0" prefWidth="276.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="36.0" prefHeight="73.0" prefWidth="73.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/icon/task-square.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="txtCustomer" fill="#1351cb" layoutX="111.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+                     <font>
+                        <Font name="SansSerif Bold" size="51.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#a3a3a3" layoutX="109.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="144.0" prefWidth="276.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="36.0" prefHeight="73.0" prefWidth="73.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/icon/truck-fast2.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="txtSupplier" fill="#1351cb" layoutX="111.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+                     <font>
+                        <Font name="SansSerif Bold" size="51.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#a3a3a3" layoutX="108.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Suppliers">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="144.0" prefWidth="337.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="36.0" prefHeight="73.0" prefWidth="73.0">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="52.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/icon/box-2.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-1.0" saturation="-1.0" />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Text fx:id="txtOrder" fill="#1351cb" layoutX="111.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+                     <font>
+                        <Font name="SansSerif Bold" size="51.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#a3a3a3" layoutX="109.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="948.0" layoutY="349.0" prefHeight="300.0" prefWidth="186.0" styleClass="AnchorPane1" stylesheets="@../style/dashboardFormStyle.css">
+         <children>
+            <Label layoutX="24.0" layoutY="38.0" text="REPORTS">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="83.0" prefHeight="201.0" prefWidth="156.0" style="-fx-background-color: white;" styleClass="AnchorPane1" stylesheets="@../style/dashboardFormStyle.css">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="-12.0" prefHeight="201.0" prefWidth="172.0" spacing="10.0">
+                     <children>
+                        <JFXButton onAction="#btnRSalaryOnAction" styleClass="btnBlack" text="Salary" />
+                        <JFXButton onAction="#btnREmployeeOnAction" styleClass="btnBlack" text="Employee" />
+                        <JFXButton onAction="#btnRAttendanceOnAction" styleClass="btnBlack" text="Attendance" />
+                        <JFXButton onAction="#btnRCustomerOnAction" styleClass="btnBlack" text="Customer" />
+                        <JFXButton onAction="#btnRSupplierOnAction" styleClass="btnBlack" text="Supplier" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <BarChart layoutX="90.0" layoutY="236.0" prefHeight="721.0" prefWidth="746.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
