@@ -45,30 +45,30 @@
       </VBox>
       <VBox layoutX="364.0" layoutY="105.0" prefHeight="200.0" prefWidth="637.0" spacing="20.0">
          <children>
-            <JFXTextField prefHeight="25.0" prefWidth="518.0" promptText="ID">
+            <JFXTextField fx:id="txtId" prefHeight="25.0" prefWidth="518.0" promptText="ID">
                <VBox.margin>
                   <Insets right="500.0" />
                </VBox.margin>
             </JFXTextField>
-            <JFXTextField prefHeight="25.0" prefWidth="670.0" promptText="TITLE" />
-            <JFXTextField prefHeight="25.0" prefWidth="670.0" promptText="AUTHOR" />
-            <JFXTextField prefHeight="25.0" prefWidth="670.0" promptText="GENRE" />
-            <JFXComboBox promptText="STATUS" />
+            <JFXTextField fx:id="txtTitle" prefHeight="25.0" prefWidth="670.0" promptText="TITLE" />
+            <JFXTextField fx:id="txtAuthor" prefHeight="25.0" prefWidth="670.0" promptText="AUTHOR" />
+            <JFXTextField fx:id="txtGenre" prefHeight="25.0" prefWidth="670.0" promptText="GENRE" />
+            <JFXComboBox fx:id="cmbStatus" promptText="STATUS" />
          </children>
       </VBox>
       <HBox layoutX="619.0" layoutY="358.0" prefHeight="34.0" prefWidth="382.0" spacing="40.0">
          <children>
-            <JFXButton fx:id="btnSave" onAction="#btnSaveOnAction" onMouseDragEntered="#btnSaveOnDragEnt" prefWidth="100.0" styleClass="btnBlue" stylesheets="@../style/otherFormStyle1.css" text="SAVE" textFill="WHITE">
+            <JFXButton onAction="#btnSaveOnAction" prefWidth="100.0" styleClass="btnBlue" stylesheets="@../style/otherFormStyle1.css" text="SAVE" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton prefWidth="100.0" styleClass="btnGray" stylesheets="@../style/otherFormStyle1.css" text="UPDATE" textFill="WHITE">
+            <JFXButton onAction="#btnUpdateOnAction" prefWidth="100.0" styleClass="btnGray" stylesheets="@../style/otherFormStyle1.css" text="UPDATE" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton prefWidth="100.0" styleClass="btnRed" stylesheets="@../style/otherFormStyle1.css" text="DELETE" textFill="WHITE">
+            <JFXButton onAction="#btnDeleteOnAction" prefWidth="100.0" styleClass="btnRed" stylesheets="@../style/otherFormStyle1.css" text="DELETE" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

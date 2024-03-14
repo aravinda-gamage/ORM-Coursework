@@ -3,31 +3,23 @@ package lk.ijse.ormCoursework.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
-import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
-import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.input.MouseDragEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
-public class BookFormController {
+public class BranchesFormController {
     public AnchorPane root;
-    public TableView tblBook;
-    public TableColumn colId;
-    public TableColumn colTitle;
-    public TableColumn colAuthor;
-    public TableColumn colGenre;
-    public TableColumn colStatus;
     public JFXTextField txtId;
     public JFXTextField txtTitle;
-    public JFXTextField txtAuthor;
-    public JFXTextField txtGenre;
+    public JFXTextField txtLocation;
     public JFXComboBox cmbStatus;
+    public TableView tbLBranch;
+    public TableColumn colId;
+    public TableColumn colName;
+    public TableColumn colLocation;
+    public TableColumn colStatus;
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
     }
