@@ -51,6 +51,9 @@ public class GlobalFormController {
     public void btnBranchesOrdOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnLogoutOnAction(ActionEvent actionEvent) {
+    public void btnLogoutOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = (Stage) root1.getScene().getWindow();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/loginForm.fxml"))));
+        stage.centerOnScreen();
     }
 }

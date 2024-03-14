@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXCheckBox?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -32,12 +32,16 @@
                </font>
             </Text>
             <TextField fx:id="txtUserName" layoutX="118.0" layoutY="201.0" promptText="User Name" />
-            <PasswordField fx:id="txtPassword" layoutX="120.0" layoutY="258.0" promptText="Password" />
+            <PasswordField fx:id="txtPassword" layoutX="120.0" layoutY="258.0" onKeyTyped="#txtPasswordOnKeyTyped" promptText="Password" />
+            <TextField fx:id="txtShowPassword" editable="false" focusTraversable="false" layoutX="120.0" layoutY="258.0" />
             <FontAwesomeIconView fill="#427d9d" glyphName="USER" layoutX="83.0" layoutY="222.0" size="25" wrappingWidth="19.285714149475098" />
             <FontAwesomeIconView fill="#427d9d" glyphName="KEY" layoutX="82.0" layoutY="279.0" size="25" />
-            <JFXButton layoutX="121.0" layoutY="355.0" onAction="#btnLoginOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Login" />
-            <JFXButton layoutX="121.0" layoutY="400.0" onAction="#btnExitOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnRed" text="Exit" textFill="RED" />
-            <JFXCheckBox layoutX="121.0" layoutY="290.0" onAction="#chkOnAction" opacity="0.69" text="Show password" />
+            <JFXButton layoutX="97.0" layoutY="352.0" onAction="#btnLoginOnAction" prefHeight="29.0" prefWidth="155.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Login" />
+            <JFXButton layoutX="98.0" layoutY="400.0" onAction="#btnExitOnAction" prefHeight="29.0" prefWidth="155.0" styleClass="btnRed" text="Exit" textFill="RED" />
+            <Button fx:id="btnSPass" layoutX="184.0" layoutY="290.0" mnemonicParsing="false" onMousePressed="#btnSPassOnMousePressed" onMouseReleased="#btnSPassOnMouseReleased" text="Show password">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
          </AnchorPane>
       </right>
    </BorderPane>
