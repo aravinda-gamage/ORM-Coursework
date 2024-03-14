@@ -24,8 +24,28 @@
     -fx-cursor: Hand;
 }
 
+.btnRed:hover{
+    -fx-background-color: #c96868;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #f44336;
+    -fx-cursor: Hand;
+}
+
 .btnBlue{
     -fx-background-color:#9BBEC8;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #008CBA;
+    -fx-cursor: Hand;
+}
+
+.btnBlue:hover{
+    -fx-background-color:#008CBA;
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 50px;
     -fx-background-radius: 50px;
@@ -45,6 +65,17 @@
     -fx-background-color: transparent;
 }
 
+.btnBlack:hover{
+    -fx-background-color: #1dadd7;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #6c6b6b;
+    -fx-cursor: Hand;
+    /*-fx-background-color: transparent;*/
+}
+
 .btnGray{
     -fx-background-color:white;
     -fx-border-width: 2px 2px 2px 2px;
@@ -61,5 +92,5 @@
 }
 
 .label1{
-    -fx-text-fill: #25f50d;
+    -fx-text-fill: #0fcbff;
 }

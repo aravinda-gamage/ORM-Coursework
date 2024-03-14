@@ -8,23 +8,47 @@
 }
 
 .btnRed{
-    -fx-background-color:white;
+    -fx-background-color: #ec2f2f;
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 50px;
     -fx-background-radius: 50px;
     -fx-border-style: solid;
-    -fx-border-color: #f44336;
+    -fx-border-color: #ec2f2f;
     -fx-cursor: Hand;
+    -fx-opacity: 50%;
+}
+
+.btnRed:hover{
+    -fx-background-color: #ec2f2f;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #ec2f2f;
+    -fx-cursor: Hand;
+    -fx-opacity: 100%;
 }
 
 .btnBlue{
-    -fx-background-color:#9BBEC8;
+    -fx-background-color: #0a2dec;
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 50px;
     -fx-background-radius: 50px;
     -fx-border-style: solid;
-    -fx-border-color: #008CBA;
+    -fx-border-color: #0a2dec;
     -fx-cursor: Hand;
+    -fx-opacity: 50%;
+}
+
+.btnBlue:hover{
+    -fx-background-color: #0a2dec;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #0a2dec;
+    -fx-cursor: Hand;
+    -fx-opacity: 100%;
 }
 
 .btnBlack{
@@ -35,16 +59,40 @@
     -fx-border-style: solid;
     -fx-border-color: black;
     -fx-cursor: Hand;
+    -fx-opacity: 50%;
 }
 
-.btnGray{
-    -fx-background-color:white;
+.btnBlack:hover{
+    -fx-background-color:#9BBEC8;
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 50px;
     -fx-background-radius: 50px;
     -fx-border-style: solid;
-    -fx-border-color: LightGray;
+    -fx-border-color: black;
     -fx-cursor: Hand;
+    -fx-opacity: 100%;
+}
+
+.btnGray{
+    -fx-background-color: #6c6b6b;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #6c6b6b;
+    -fx-cursor: Hand;
+    -fx-opacity: 50%;
+}
+
+.btnGray:hover{
+    -fx-background-color: #6c6b6b;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #6c6b6b;
+    -fx-cursor: Hand;
+    -fx-opacity: 100%;
 }
 
 .AnchorPane1{

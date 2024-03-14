@@ -10,17 +10,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root1" prefHeight="1015.0" prefWidth="1920.0" styleClass="root" stylesheets="@../style/globleFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProjectPaintHouse.controller.GlobalFormController">
+<AnchorPane fx:id="root1" prefHeight="1015.0" prefWidth="1920.0" styleClass="root" stylesheets="@../style/globalFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ormCoursework.controller.GlobalFormController">
    <children>
       <HBox prefHeight="1015.0" prefWidth="1939.0">
          <children>
-            <AnchorPane maxHeight="1015.0" maxWidth="305.0" prefHeight="1015.0" prefWidth="294.0" styleClass="sideAnchorPane" stylesheets="@../style/globleFormStyle.css">
+            <AnchorPane maxHeight="1015.0" maxWidth="305.0" prefHeight="1015.0" prefWidth="294.0" styleClass="sideAnchorPane" stylesheets="@../style/globalFormStyle.css">
                <children>
-                  <AnchorPane layoutX="35.0" layoutY="26.0" prefHeight="189.0" prefWidth="233.0" styleClass="AnchorPane1" stylesheets="@../style/globleFormStyle.css">
+                  <AnchorPane layoutX="35.0" layoutY="26.0" prefHeight="189.0" prefWidth="233.0" styleClass="AnchorPane1" stylesheets="@../style/globalFormStyle.css">
                      <children>
-                        <Label layoutX="20.0" layoutY="68.0" styleClass="label1" stylesheets="@../style/globleFormStyle.css" text="BookWorm" textFill="#1cff11">
+                        <ImageView fitHeight="122.0" fitWidth="118.0" layoutX="58.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assest/image/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="132.0" styleClass="label1" stylesheets="@../style/globalFormStyle.css" text="BookWorm" textFill="#1cff11">
                            <font>
-                              <Font name="System Bold" size="36.0" />
+                              <Font name="Iskoola Pota Bold" size="36.0" />
                            </font>
                         </Label>
                      </children>
@@ -29,7 +34,7 @@
                      <children>
                         <AnchorPane prefHeight="83.0" prefWidth="300.0">
                            <children>
-                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnUserOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globleFormStyle.css" text="USER" textFill="WHITE">
+                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnUserOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globalFormStyle.css" text="USER" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -38,7 +43,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="83.0" prefWidth="300.0">
                            <children>
-                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnBookOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globleFormStyle.css" text="BOOK" textFill="WHITE">
+                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnBookOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globalFormStyle.css" text="BOOK" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -47,7 +52,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="83.0" prefWidth="300.0">
                            <children>
-                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnDetailOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globleFormStyle.css" text="DETAIL" textFill="WHITE">
+                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnDetailOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globalFormStyle.css" text="DETAIL" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -56,7 +61,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="83.0" prefWidth="300.0">
                            <children>
-                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnBranchesOrdOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globleFormStyle.css" text="BRANCHES" textFill="WHITE">
+                              <JFXButton layoutX="6.0" layoutY="15.0" onAction="#btnBranchesOrdOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globalFormStyle.css" text="BRANCHES" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -65,7 +70,7 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="83.0" prefWidth="300.0">
                            <children>
-                              <JFXButton layoutX="7.0" layoutY="15.0" onAction="#btnLogoutOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globleFormStyle.css" text="LOGOUT" textFill="WHITE">
+                              <JFXButton layoutX="7.0" layoutY="15.0" onAction="#btnLogoutOnAction" prefHeight="53.0" prefWidth="276.0" styleClass="btnBlack" stylesheets="@../style/globalFormStyle.css" text="LOGOUT" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
@@ -92,15 +97,15 @@
                <children>
                   <ImageView fitHeight="306.0" fitWidth="566.0" layoutX="321.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 60%;">
                      <image>
-                        <Image url="@../assest/image/globleFormWelcome.png" />
+                        <Image url="@../assest/image/globalFormWelcome.png" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
-            <AnchorPane prefHeight="1015.0" prefWidth="387.0" styleClass="sideAnchorPane2" stylesheets="@../style/globleFormStyle.css">
+            <AnchorPane prefHeight="1015.0" prefWidth="431.0" styleClass="sideAnchorPane2" stylesheets="@../style/globalFormStyle.css">
                <children>
-                  <ImageView fitHeight="349.0" fitWidth="424.0" layoutY="751.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="171.0" fitWidth="365.0" layoutX="34.0" layoutY="786.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assest/image/globleFormBooks.png" />
+                        <Image url="@../assest/image/globalFormBooks.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="lblDate" alignment="CENTER" layoutX="34.0" layoutY="41.0" prefHeight="36.0" prefWidth="160.0" styleClass="AnchorPane1" textFill="WHITE">
