@@ -1,5 +1,6 @@
 package lk.ijse.ormCoursework.controller;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -22,6 +23,10 @@ public class GlobalFormController {
     public Label lblTime;
     public ImageView imgBDark;
     public AnchorPane root3;
+    public JFXButton btnUser;
+    public JFXButton btnBook;
+    public JFXButton btnDetail;
+    public JFXButton btnBranches;
 
     private void updateClock(){
         lblTime.setText(DateTimeUtil.timeNow());
@@ -37,7 +42,7 @@ public class GlobalFormController {
     public void btnUserOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/userForm.fxml"));
         Parent load = fxmlLoader.load();
-        BookFormController controller = fxmlLoader.getController();
+        UserFormController controller = fxmlLoader.getController();
         root2.getChildren().clear();
         root2.getChildren().add(load);
     }
@@ -53,7 +58,7 @@ public class GlobalFormController {
     public void btnDetailOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/detailForm.fxml"));
         Parent load = fxmlLoader.load();
-        BookFormController controller = fxmlLoader.getController();
+        DetailFormController controller = fxmlLoader.getController();
         root2.getChildren().clear();
         root2.getChildren().add(load);
     }
@@ -61,7 +66,7 @@ public class GlobalFormController {
     public void btnBranchesOrdOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/branchesForm.fxml"));
         Parent load = fxmlLoader.load();
-        BookFormController controller = fxmlLoader.getController();
+        BranchesFormController controller = fxmlLoader.getController();
         root2.getChildren().clear();
         root2.getChildren().add(load);
     }
