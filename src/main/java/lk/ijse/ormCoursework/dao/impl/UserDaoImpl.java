@@ -1,22 +1,22 @@
 package lk.ijse.ormCoursework.dao.impl;
 
-import lk.ijse.ormCoursework.dao.custom.BookDao;
-import lk.ijse.ormCoursework.entity.Book;
+import lk.ijse.ormCoursework.dao.custom.UserDao;
+import lk.ijse.ormCoursework.entity.User;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class BookDaoImpl implements BookDao {
+public class UserDaoImpl implements UserDao {
     private Session session;
     @Override
     public void setSession(Session session) {
-        this.session=session;
+        this.session = session;
     }
 
     @Override
-    public List<Book> loadAll() {
-        String sqlQuery="FROM book";
+    public List<User> loadAll() {
+        String sqlQuery="FROM user";
         Query query = session.createQuery(sqlQuery);
         List list =query.list ();
         session.close();
@@ -24,27 +24,28 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public String save(Book book) {
-        return (String) session.save (book);
+    public String save(User user) {
+        return (String) session.save (user);
     }
 
     @Override
-    public void update(Book book) {
-        session.update (book);
-    }
-    @Override
-    public void delete(Book book) {
-        session.delete (book);
+    public void update(User user) {
+        session.update (user);
     }
 
     @Override
-    public Book getObject(String id) throws Exception {
-        return session.get(Book.class,id);
+    public void delete(User user) {
+
     }
 
     @Override
-    public List<String> bookIds() {
-        String hql = "SELECT id from book ";
+    public User getObject(String id) throws Exception {
+        return session.get (User.class,id);
+    }
+
+    @Override
+    public List<String> UserIds() {
+        String hql = "SELECT userId from user ";
         Query<String> query=session.createQuery (hql);
         List<String> results = query.list();
         session.close();

@@ -1,9 +1,12 @@
 package lk.ijse.ormCoursework.dao.custom;
 
 import org.hibernate.Session;
+import lk.ijse.ormCoursework.entity.Book;
+
+import java.util.List;
+
 public interface BookDao {
     public void setSession(Session session);
-
     public List<Book> loadAll();
     public String save(Book book);
     public void update(Book book);
