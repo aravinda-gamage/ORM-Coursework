@@ -78,10 +78,4 @@ public class LoginFormController implements Initializable {
         }
         return false;
     }
-
-    public void btnAdminLoginOnAction(ActionEvent actionEvent) throws IOException {
-        Stage stage = (Stage) root.getScene().getWindow();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/adminLoginForm.fxml"))));
-        stage.centerOnScreen();
-    }
 }

@@ -9,4 +9,5 @@ public interface UserBo {
     UserDto getUser(String id) throws Exception;
     boolean updateUser(UserDto dto);
     List<UserDto> loadAll();
+    public boolean deleteUser(UserDto dto);
 }

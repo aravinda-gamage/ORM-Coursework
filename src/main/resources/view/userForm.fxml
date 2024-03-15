@@ -74,7 +74,7 @@
                 </JFXButton>
             </children>
         </HBox>
-        <TableView fx:id="tblBook" layoutX="22.0" layoutY="408.0" prefHeight="595.0" prefWidth="1170.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
+        <TableView fx:id="tblUser" layoutX="22.0" layoutY="408.0" prefHeight="595.0" prefWidth="1170.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0">
             <columns>
                 <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
                 <TableColumn fx:id="colUserName" prefWidth="513.0" text="USER NAME" />

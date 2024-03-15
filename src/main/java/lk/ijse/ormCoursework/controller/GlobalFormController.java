@@ -27,6 +27,7 @@ public class GlobalFormController {
     public JFXButton btnBook;
     public JFXButton btnDetail;
     public JFXButton btnBranches;
+    public boolean status;
 
     private void updateClock(){
         lblTime.setText(DateTimeUtil.timeNow());
@@ -64,9 +65,9 @@ public class GlobalFormController {
     }
 
     public void btnBranchesOrdOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/branchesForm.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/adminLoginForm.fxml"));
         Parent load = fxmlLoader.load();
-        BranchesFormController controller = fxmlLoader.getController();
+        AdminLoginFormController controller = fxmlLoader.getController();
         root2.getChildren().clear();
         root2.getChildren().add(load);
     }

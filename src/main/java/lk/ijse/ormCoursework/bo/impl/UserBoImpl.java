@@ -75,6 +75,26 @@ public class UserBoImpl implements UserBo {
         return false;
     }
 
+    public boolean deleteUser(UserDto dto) {
+        session=SessionFactoryConfig.getInstance ().getSession ();
+        Transaction transaction=session.beginTransaction ();
+
+        try{
+            userDao.setSession (session);
+            userDao.delete (new User (
+                    dto.getUserId(),
+                    dto.getUserName(),
+                    dto.getPassword()
+            ));
+            transaction.commit ();
+            session.close ();
+            return true;
+        }catch (Exception e){
+            transaction.rollback ();
+        }
+        return false;
+    }
+
     @Override
     public List<UserDto> loadAll() {
         session=SessionFactoryConfig.getInstance ().getSession ();

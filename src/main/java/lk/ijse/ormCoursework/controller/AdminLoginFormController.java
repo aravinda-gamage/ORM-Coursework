@@ -23,10 +23,11 @@ public class AdminLoginFormController {
         String userPass=txtPassword.getText ();
         String userName=txtUserName.getText ();
         if (userName.equals (name) && userPass.equals (password)){
-            Stage stage = (Stage) root.getScene().getWindow();
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/globalForm.fxml"))));
-            stage.centerOnScreen();
-
+            FXMLLoader fxmlLoader= new FXMLLoader(getClass().getResource("/view/BranchesForm.fxml"));
+            Parent load= fxmlLoader.load();
+            BranchesFormController controller=fxmlLoader.getController();
+            root.getChildren().clear();
+            root.getChildren().add(load);
         }else{
             new Alert(Alert.AlertType.ERROR, "INVALID ADMIN ATHUENTICATION").show ();
             txtPassword.clear ();

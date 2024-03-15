@@ -42,7 +42,6 @@
                </font>
             </Label>
             <Label layoutX="71.0" layoutY="260.0" text="Please enter your credentials to log in" textFill="#eaeef4" />
-            <JFXButton layoutX="94.0" layoutY="297.0" onAction="#btnAdminLoginOnAction" prefHeight="29.0" prefWidth="155.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Admin Login" />
          </AnchorPane>
       </center>
    </BorderPane>

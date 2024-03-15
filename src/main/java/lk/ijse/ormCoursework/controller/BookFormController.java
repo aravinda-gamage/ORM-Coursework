@@ -18,6 +18,10 @@ import javafx.util.Duration;
 import lk.ijse.ormCoursework.bo.custom.BookBo;
 import lk.ijse.ormCoursework.bo.impl.BookBoImpl;
 import lk.ijse.ormCoursework.dto.BookDto;
+import lk.ijse.ormCoursework.util.SessionFactoryConfig;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.net.URL;
 import java.util.List;
@@ -49,6 +53,7 @@ public class BookFormController {
 
         loadAllBooks();
         setStatus();
+        setBookId();
     }
 
     private void setStatus() {
@@ -190,5 +195,40 @@ public class BookFormController {
         txtTitle.clear();
         txtAuthor.clear();
         txtGenre.clear();
+    }
+
+    public String nextBookId() {
+        Session session = SessionFactoryConfig.getInstance ().getSession ();
+        Transaction transaction = session.beginTransaction ();
+
+        Query query = session.createQuery ("select id from book order by id desc");
+
+        String nextId = "B001";
+
+        if (query.list ().size () == 0) {
+            return nextId;
+        } else {
+            String id = (String) query.list ().get (0);
+
+            String[] SUs = id.split ("B00");
+
+            for (String a : SUs) {
+                id = a;
+            }
+
+            int idNum = Integer.valueOf (id);
+
+            id = "B00" + (idNum + 1);
+
+            transaction.commit ();
+            session.close ();
+
+            return id;
+        }
+    }
+
+    public void setBookId(){
+        String bookId = nextBookId();
+        txtId.setText(bookId);
     }
 }
