@@ -34,7 +34,12 @@ public class GlobalFormController {
         lblDate.setText(DateTimeUtil.dateNow());
     }
 
-    public void btnUserOnAction(ActionEvent actionEvent) {
+    public void btnUserOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/userForm.fxml"));
+        Parent load = fxmlLoader.load();
+        BookFormController controller = fxmlLoader.getController();
+        root2.getChildren().clear();
+        root2.getChildren().add(load);
     }
 
     public void btnBookOnAction(ActionEvent actionEvent) throws IOException {
@@ -45,10 +50,20 @@ public class GlobalFormController {
         root2.getChildren().add(load);
     }
 
-    public void btnDetailOnAction(ActionEvent actionEvent) {
+    public void btnDetailOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/detailForm.fxml"));
+        Parent load = fxmlLoader.load();
+        BookFormController controller = fxmlLoader.getController();
+        root2.getChildren().clear();
+        root2.getChildren().add(load);
     }
 
-    public void btnBranchesOrdOnAction(ActionEvent actionEvent) {
+    public void btnBranchesOrdOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/branchesForm.fxml"));
+        Parent load = fxmlLoader.load();
+        BookFormController controller = fxmlLoader.getController();
+        root2.getChildren().clear();
+        root2.getChildren().add(load);
     }
 
     public void btnLogoutOnAction(ActionEvent actionEvent) throws IOException {

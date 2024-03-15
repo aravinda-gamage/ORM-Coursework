@@ -12,11 +12,11 @@ public class Detail {
     private Date gDate;
     @Column(name = "d_r_date")
     private Date rDate;
-    @Column(name = "d_user")
+    //@Column(name = "d_user")
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @Column(name = "dBook")
+    //@Column(name = "dBook")
     @ManyToOne
     @JoinColumn(name = "b_id")
     private Book book;
