@@ -16,7 +16,6 @@ public class Book {
     private String genre;
     @Column(name = "b_status")
     private String status;
-
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER,mappedBy = "book")
     private List<Detail> detailList;
 
