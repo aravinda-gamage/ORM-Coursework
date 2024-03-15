@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<?import com.jfoenix.controls.JFXCheckBox?>
 <AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" styleClass="root" stylesheets="@../style/loginFormStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ormCoursework.controller.AdminLoginFormController">
    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0">
       <left>
@@ -37,7 +36,6 @@
             <FontAwesomeIconView fill="#427d9d" glyphName="KEY" layoutX="82.0" layoutY="279.0" size="25" />
             <JFXButton layoutX="120.0" layoutY="355.0" onAction="#btnLoginOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnBlue" stylesheets="@../style/loginFormStyle.css" text="Login" />
             <JFXButton layoutX="120.0" layoutY="400.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="110.0" styleClass="btnRed" stylesheets="@../style/loginFormStyle.css" text="Back" />
-            <JFXCheckBox layoutX="121.0" layoutY="290.0" onAction="#chkOnAction" opacity="0.69" text="Show password" />
          </AnchorPane>
       </right>
    </BorderPane>
