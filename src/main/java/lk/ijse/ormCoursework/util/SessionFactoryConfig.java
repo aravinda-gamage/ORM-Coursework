@@ -1,5 +1,6 @@
 package lk.ijse.ormCoursework.util;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import entity.User;
@@ -20,7 +21,16 @@ public class SessionFactoryConfig {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        configuration.addAnnotatedClass(User.class)
+        configuration.addAnnotatedClass(User.class).addAnnotatedClass(Book.class).addAnnotatedClass(Detail.class).addAnnotatedClass(Branches.class);
+        sessionFactory = configuration.setProperties(properties).buildSessionFactory();
+
+        public static SessionFactoryConfig getInstance(){
+            return (null == sessionFactoryConfig) ? sessionFactoryConfig = new SessionFactoryConfig() : sessionFactoryConfig;
+        }
+        public Session getSession() {
+            return sessionFactoryConfig.openSession();
+        }
+
 
     }
 }
