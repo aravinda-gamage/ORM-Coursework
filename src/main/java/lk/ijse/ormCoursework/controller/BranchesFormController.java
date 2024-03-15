@@ -37,9 +37,9 @@ public class BranchesFormController {
 
     public void initialize(){
         colId.setCellValueFactory(new PropertyValueFactory<>("brId"));
-        colName.setCellValueFactory(new PropertyValueFactory<>("bname"));
+        colName.setCellValueFactory(new PropertyValueFactory<>("bName"));
         colLocation.setCellValueFactory(new PropertyValueFactory<>("location"));
-        colStatus.setCellValueFactory(new PropertyValueFactory<>("bstatus"));
+        colStatus.setCellValueFactory(new PropertyValueFactory<>("bStatus"));
 
         try {
 

@@ -33,7 +33,7 @@ public class UserFormController {
     UserBo userBo=new UserBoImpl();
 
     public void initialize(){
-        colId.setCellValueFactory (new PropertyValueFactory<>("BId"));
+        colId.setCellValueFactory (new PropertyValueFactory<>("userId"));
         colUserName.setCellValueFactory (new PropertyValueFactory<>("userName"));
         setUserId();
         loadAllUsers();
@@ -97,7 +97,7 @@ public class UserFormController {
                 txtPassword.getText ()
         );
 
-        boolean isDeleted = userBo.deleteUser (userDto);
+        boolean isDeleted = userBo.deleteUser(userDto);
 
         if (isDeleted) {
             new Alert (Alert.AlertType.INFORMATION, "Delete Succes..!").show ();

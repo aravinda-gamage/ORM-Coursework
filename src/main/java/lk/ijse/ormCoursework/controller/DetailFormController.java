@@ -38,8 +38,8 @@ public class DetailFormController {
 
     public void initialize(){
         colId.setCellValueFactory (new PropertyValueFactory<>("dId"));
-        colGetDate.setCellValueFactory (new PropertyValueFactory<> ("sdate"));
-        colReturnDate.setCellValueFactory (new PropertyValueFactory<> ("edate"));
+        colGetDate.setCellValueFactory (new PropertyValueFactory<> ("gDate"));
+        colReturnDate.setCellValueFactory (new PropertyValueFactory<> ("rDate"));
         colUserId.setCellValueFactory (new PropertyValueFactory<> ("userId"));
         colBookId.setCellValueFactory (new PropertyValueFactory<> ("bookId"));
 
